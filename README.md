@@ -1,7 +1,5 @@
-chatThing
+List Creator
 =========
-
-Chat assignment
 
 Instructions on how to run:
 
