@@ -7,7 +7,7 @@ html
 
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
 
-    title Hello World
+    title Create a list
 
     meta(name="description", content="Hello World")
 
@@ -17,12 +17,22 @@ html
 
   body
 
-    h1 Hi all
+    .wrapper
 
-    
+        h1 Create a list
+
+        h2 Use this client to create a list which you could edit with others
+
+        div.messages List items appear here
+
+        input.textInput(type="text" placeholder="Type here")
+
+        a(href="#") Submit list item
+
 
     script(type="text/javascript", src="https://code.jquery.com/jquery-2.1.1.min.js")
 
     script(type="text/javascript", src="https://cdn.socket.io/socket.io-1.1.0.js")
 
     script(type="text/javascript", src="assets/scripts/main.js")
+
