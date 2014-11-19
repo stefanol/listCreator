@@ -13,6 +13,7 @@ Instructions on how to run:
 
 
 What does everything do?
+=========
 
 node server.js - Running this will set up your server, which when running, is accesible by navigating to localhost:3000 in your browser
 
