@@ -6,6 +6,11 @@ var http = require('http'); //var http = require('http').Server(app) is the same
 http=http.Server(app);
 var io = require('socket.io')(http);
 
+var serverText = '';
+var serverNumber = 1;
+var beforeTag = '<div class="item"><a href="#" class="remove">Remove Item</a>';
+var afterTag = '</div>';
+
 // Route our Assets
 app.use('/assets/', express.static(__dirname + '/public/assets/'));
 
@@ -18,8 +23,13 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){
   console.log('A User Connected');
 
+  io.emit('update',serverText);
+
   socket.on('message',function(text){  //emit an update event that passes the text
-  	io.emit('update',text); //server recieves message, and then sends it back out in a event called update
+  	
+  	serverText = serverText + beforeTag + serverNumber + '. ' + text + afterTag;
+  	serverNumber = serverNumber + 1;
+  	io.emit('update',serverText); //server recieves message, and then sends it back out in a event called update
   });
 
 });

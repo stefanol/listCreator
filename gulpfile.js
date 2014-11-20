@@ -8,7 +8,7 @@ var gulp      = require('gulp');
 var sass      = require('gulp-sass');
 var less      = require('gulp-less');
 var jade      = require('gulp-jade');
-var imagemin  = require('gulp-sass');
+var imagemin  = require('gulp-imagemin');
 var rename    = require('gulp-rename');
 
 // ------------------------------------
