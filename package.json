@@ -1,9 +1,9 @@
 {
-  "name": "socket-boilerplate",
-  "description": "Socket Boilerplate Project",
-  "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
-  "author": "Darcy Clarke",
+  "name": "To Do List",
+  "description": "This is a simple collaborative list",
+  "version": "1.0",
+  "homepage": "www.stefanol.com",
+  "author": "Stefano Lombardo",
   "main": "server.js",
   "dependencies": {
     "express": "*",
@@ -18,6 +18,7 @@
     "gulp-util": "*",
     "gulp-load-plugins": "*",
     "gulp-sass": "*",
+    "gulp-less": "*",
     "gulp-uglify": "*",
     "gulp-imagemin": "*",
     "gulp-livereload": "*",
