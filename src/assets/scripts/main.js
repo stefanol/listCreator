@@ -11,6 +11,14 @@ jQuery(function($) {
       socket.emit('message', text);
     });
 
+
+
+    $('div').on('click', function(){
+      console.log('remove');
+      var removeItem = $(text).val();
+      socket.emit('message', text);
+    });
+
     // Recieve Update Event From The Server
     socket.on('update', function(text){
       $('.messages').html(text);
